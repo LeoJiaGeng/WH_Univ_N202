@@ -5,7 +5,7 @@ max_core=$1
 echo "the maximum cores is $max_core";
 
 for file in *.gjf; do
-    echo ${file} # print the file name
+    echo ${file} is ready # print the file name
 
     # endless loop infinite
     while true
@@ -25,6 +25,13 @@ for file in *.gjf; do
         # set every file cores and calculate the number of cores later
         file_core=16
         add_core=`expr $file_core + $cur_core`
+
+        # check input valid
+        if (($cur_core > $max_core))
+        then
+            echo error max cores in input
+            break
+        fi
 
         # compare the number of cores to the number of cores
         if ((($cur_core < $max_core) && ($add_core < $max_core)))
