@@ -27,7 +27,7 @@ for file in *.gjf; do
         add_core=`expr $file_core + $cur_core`
 
         # check input valid
-        if (($cur_core > $max_core))
+        if (($file_core > $max_core))
         then
             echo error max cores in input
             break
