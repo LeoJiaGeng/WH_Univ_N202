@@ -1,22 +1,24 @@
 #!/bin/bash
 
-echo "input the maximum cores";
 max_core=$1
 echo "the maximum cores is $max_core";
+wait_times=0
 
-for file in *.gjf; do
-    echo ${file} is ready # print the file name
+for file in *.gjf
+do
+    # print the file name
+    echo ${file} is ready >> print_history.log 
 
     # endless loop infinite
     while true
     do
-        # search the number of cores left
+        # search the number of cores left three times
         vmstat > current_core.out
         sleep 1s
         vmstat > current_core.out
         sleep 1s
         vmstat > current_core.out
-        echo refresh the information of cores once
+        # echo refresh the information of cores once
 
         dataline=$(cat current_core.out)
         cur_cores=${dataline:159:160}
@@ -29,7 +31,7 @@ for file in *.gjf; do
         # check input valid
         if (($file_core > $max_core))
         then
-            echo error max cores in input
+            echo error max cores in input >> print_history.log
             break
         fi
 
@@ -37,11 +39,13 @@ for file in *.gjf; do
         if ((($cur_core < $max_core) && ($add_core < $max_core)))
         then
             time g16 < ${file} > ${file//gjf/log} &
-            echo ${file} has been submitted
+            echo ${file} has been submitted >> print_history.log
+            wait_times=0
             break
         else
-            sleep 30s
-            echo ${file} is waiting 
+            let "wait_times++"
+            sleep 1m
+            echo ${file} is waiting for ${wait_times} minutes >> print_history.log
         fi
     done
 done
