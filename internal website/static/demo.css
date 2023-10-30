@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #231C1A;
+    height: 80px;
+    width: 100%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top:0;
+    line-height: 80px;
+}
+
+h1 {
+    color:white;
+}
+
+body {
+    background-color:#d0e4fe;
+}
+
+
+
+p {
+    font-family:"Times New Roman";
+    font-size:20px;
+}
+
+para1 {
+    text-align:center;
+    color:red;
+}
+
+li {
+    text-decoration:none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>实验室网站</title>
+        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
+    </head>
+    <body>
+        <header>
+            <!--这是一个注释，注释在浏览器中不会显示-->
+            <h1>Welcome to Quantum Chemistry Lab 202</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">实验室首页</a></li>
+                    <li><a href="#">人员风采</a></li>
+                    <li><a href="#">科研资料</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <section>
+                <p>欢迎来到武汉大学计算化学实验室-化北202</p>
+                <p>在这里<br>你会与量子化学纠缠<br>形成纠缠态</p>
+                <a href="https://www.runoob.com">这是一个链接</a>
+                <a href='{{ url_for("static",filename="document.pdf") }}' download>点击下载文档</a>
+                <div>
+                    <img src='{{ url_for("static",filename="image2.png") }}' alt="" />
+                </div>
+            </section>
+            <section>
+            <p>无边框的图片链接:
+                <a href="http://www.runoob.com/html/html-tutorial.html">
+                <img border="0" src='{{ url_for("static",filename="smile.png") }}' alt="HTML 教程" width="76" height="57"></a></p>
+            </section>
+            </main>
+        <footer>
+            <p>Copyright @ 2023 量化实验室 All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
