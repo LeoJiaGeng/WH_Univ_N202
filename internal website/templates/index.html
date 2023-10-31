@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>实验室网站</title>
+        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
+    </head>
+    <body>
+        <header>
+            <!--这是一个注释，注释在浏览器中不会显示-->
+            <a href='{{url_for("template")}}'>
+            <img border="0" src='{{ url_for("static",filename="image4.png") }}' alt="HTML 教程" width="58" height="58"></a>
+            <pre><h1>      Welcome to Quantum Chemistry Lab 202</h1></pre>
+            <nav>
+                <ul><!--网页间链接，同时带参数传递-->
+                    <li><a href='{{url_for("index",a=50)}}'>实验室首页</a></li>
+                    <li><a href="#">人员风采</a></li>
+                    <li><a href='{{url_for("software")}}'>科研资料</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    {% if session['username'] == 'cao'  %}
+                    <li><a href='{{url_for("logout")}}'>直接注销</a></li>
+                    <a href="#">欢迎{{ session['username']}}</a>
+                    {% else %}
+                    <li><a href='{{url_for("login_gui")}}'>直接登录</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <section class="welcome">
+                <h2>欢迎来到武汉大学计算化学实验室</h2><br>
+                <p>在这里,</p>
+                <p>你会与量子化学纠缠,</p>
+                <p>形成纠缠态</p>
+                <br><a href='{{ url_for("static",filename="document.pdf") }}' download>了解更多</a>
+            </section>
+            <section>
+
+            </section>
+            </main>
+        <footer>
+            <p>Copyright @ 2023 量化实验室 All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

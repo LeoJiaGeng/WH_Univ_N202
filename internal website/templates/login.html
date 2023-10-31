@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>user_login</title>
+        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
+    </head>
+    <body>
+        <section class="login_guide">
+        <h3 style="text-align:center;">用户登录页面</h3><br>
+        <div>
+            <form style="text-align:center;" action="/loginProcess" method="post">
+                账号: <input type="text" name="nm"><br>
+                密码: <input type="password" name="pwd"><br>
+                <input type="submit" name="submit" value="登录">
+            </form>
+        </div>
+        </section>
+    </body>
+</html>

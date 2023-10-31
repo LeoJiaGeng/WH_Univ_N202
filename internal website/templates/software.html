@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>user_login</title>
+        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
+    </head>
+    <body>
+        <section>
+        <h3>软件列表</h3>
+        <img src='{{ url_for("static",filename="images/gaussian.png") }}' alt="HTML 教程" width="58" height="58">
+        <a href='{{ url_for("static",filename="software/gv6.rar") }}' download>window下载</a>
+        <a href='{{ url_for("static",filename="software/g16w.rar") }}' download>linux下载</a>
+        </section>
+    </body>
+</html>

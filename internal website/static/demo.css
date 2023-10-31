@@ -30,26 +30,71 @@ header ul {
     line-height: 80px;
 }
 
-h1 {
+header h1 {
     color:white;
+    position: absolute;
+    left: 5vw;
+    top:0;
+    line-height: 80px;
+    background-image: url(image4.png);
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
-body {
-    background-color:#d0e4fe;
+header p{
+    color:aliceblue;
+
 }
-
-
 
 p {
     font-family:"Times New Roman";
     font-size:20px;
 }
 
-para1 {
-    text-align:center;
-    color:red;
-}
 
 li {
     text-decoration:none;
+}
+
+.welcome {
+    background-color: antiquewhite;
+    color:white;
+    height: 85vh;
+    background-image: url(quantum2.jpg);
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* 列放排布 */
+    align-items: center;  /* 水平对齐 */ 
+    justify-content: center; /* 垂直对齐 */ 
+}
+
+.welcome h2{
+    font-size: 60px;
+}
+
+.welcome p{
+    font-size: 20px;
+    color: #fef7fe;
+    margin: 5px 0px;
+}
+
+.welcome a {
+    color:white;
+    text-decoration: none;
+    border: 1px solid #ACACAC; /* 边框 */
+    padding: 10px 20px;  /* 内边距 */
+    border-radius: 5px;  /* 边框圆弧 */
+}
+
+footer {
+    background-color: #231C1A;
+    color: #b7b7b7;
+    height: 60px;  /* 区域高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
 }
