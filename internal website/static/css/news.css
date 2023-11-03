@@ -1,0 +1,88 @@
+/* 重置默认样式 */
+body, h1, h2, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置页面背景和文字颜色 */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* 设置页头样式 */
+header {
+    background-color: #66bb6a;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 设置页头标题样式 */
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* 设置页头副标题样式 */
+p {
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 设置导航样式 */
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 设置主要内容区样式 */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* 设置主要内容区标题样式 */
+h2 {
+    color: #66bb6a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 设置段落样式 */
+p {
+    margin-bottom: 10px;
+}
+
+/* 设置研究领域列表样式 */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* 设置页脚样式 */
+footer {
+    background-color: #66bb6a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

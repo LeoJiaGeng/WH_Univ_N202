@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>实验室网站</title>
-        <link rel="stylesheet" href='{{ url_for("static",filename="css/demo.css") }}' />
+        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
     </head>
     <body>
         <header>
             <!--这是一个注释，注释在浏览器中不会显示-->
+            <a href='{{url_for("template")}}'>
+            <img border="0" src='{{ url_for("static",filename="image4.png") }}' alt="HTML 教程" width="58" height="58"></a>
             <pre><h1>      Welcome to Quantum Chemistry Lab 202</h1></pre>
             <nav>
                 <ul><!--网页间链接，同时带参数传递-->
-                    <li><a href='{{url_for("news",a=50)}}'>实验室首页</a></li>
+                    <li><a href='{{url_for("index",a=50)}}'>实验室首页</a></li>
                     <li><a href='{{url_for("people")}}'>人员风采</a></li>
                     <li><a href='{{url_for("software")}}'>科研资料</a></li>
                     <li><a href='{{url_for("start")}}'>新手入门</a></li>
@@ -30,7 +32,7 @@
                 <h2>欢迎来到武汉大学计算化学实验室</h2><br>
                 <p>在这里,</p>
                 <p>你会与量子化学形成纠缠态</p>
-                <br><a href='{{ url_for("static",filename="software/document.pdf") }}' download>了解更多</a>
+                <br><a href='{{ url_for("static",filename="document.pdf") }}' download>了解更多</a>
             </section>
             <section>
 

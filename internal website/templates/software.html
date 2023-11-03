@@ -3,14 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <title>user_login</title>
-        <link rel="stylesheet" href='{{ url_for("static",filename="demo.css") }}' />
+        <link rel="stylesheet" href='{{ url_for("static",filename="css/software.css") }}' />
     </head>
     <body>
-        <section>
-        <h3>软件列表</h3>
-        <img src='{{ url_for("static",filename="images/gaussian.png") }}' alt="HTML 教程" width="58" height="58">
-        <a href='{{ url_for("static",filename="software/gv6.rar") }}' download>window下载</a>
-        <a href='{{ url_for("static",filename="software/g16w.rar") }}' download>linux下载</a>
+        <h2>软件列表</h2>
+        <section class="quantum_software">
+            <div class="sub_class"><h3>量化软件</h3></div>
+            <div class="sub_class">
+                <div class="single_page">
+                    <img src='{{ url_for("static",filename="images/gaussian.png") }}' alt="HTML 教程" width="58" height="58">
+                    <p>Gaussian是一款用于量子化学的强大软件，可用于电子结构计算、分子建模、光谱性质预测和反应机制研究</p>
+                    <div class="download_option">
+                    <a href='http://www.gaussian.com/'>官网链接</a><br>
+                    <a href='http://www.gaussian.com/'>手册下载</a><br>
+                    </div>
+                    <div class="download_option">
+                    <a href='{{ url_for("static",filename="software/gv6.rar") }}' download>window下载</a>
+                    <a href='{{ url_for("static",filename="software/g16w.rar") }}' download>linux下载</a>
+                    </div>
+                </div>
+                <div class="single_page">
+                    <img src='{{ url_for("static",filename="images/mesmer.png") }}' alt="HTML 教程" width="100" height="100">
+                    <p>MESMER旨在分析和模拟气相中发生的反应，提取速率系数，分析实验数据，拟合模型参数，用于表示速率系数</p>
+                    <div class="download_option">
+                    <a href='https://sourceforge.net/projects/mesmer/'>官网链接</a><br>
+                    <a href='https://sourceforge.net/projects/mesmer/'>手册下载</a><br>
+                    </div>
+                    <div class="download_option">
+                    <a href='{{ url_for("static",filename="software/Mesmer6.0_Windows_Installer.zip") }}' download>window下载</a>
+                    <a href='{{ url_for("static",filename="software/g16w.rar") }}' download>linux下载</a>
+                    </div>
+                </div>
+                <div class="single_page">
+                    <img src='{{ url_for("static",filename="images/SSH.png") }}' alt="HTML 教程" width="76" height="72">
+                    <p>SSH是服务器与实验电脑连接的纽带，选择不同服务器的IP，登录自己的账号，即可进去Linux命令行界面</p>
+                    <div class="download_option">
+                    <a href='https://www.runoob.com/linux/linux-tutorial.html/'>官网链接</a><br>
+                    <a href='https://sourceforge.net/projects/mesmer/'>手册下载</a><br>
+                    </div>
+                    <div class="download_option">
+                    <a href='{{ url_for("static",filename="software/SSH.zip") }}' download>window下载</a>
+                    <a href='{{ url_for("static",filename="software/g16w.rar") }}' download>linux下载</a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <footer>
+            <p>Copyright @ 2023 量化实验室 仅仅只提供软件下载.</p>
+        </footer>
     </body>
 </html>

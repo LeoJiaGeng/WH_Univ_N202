@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+   .navbar {
+      background-color: #28bf17;
+      overflow: hidden;
+   }
+   .navbar a {
+      display: block;
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 15px;
+   }
+   .navbar a:hover {
+      background-color: #dd9ede;
+      color: black;
+   }
+   .active-link {
+      background-color: #f53319;
+      color: white;
+   }
+   .dropdown {
+      float: left;
+   }
+   .dropdown .dropbtn {
+      border: none;
+      color: #f2f2f2;
+      padding: 10px;
+      background-color: #28bf17;
+   }
+   .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #c7385a;
+      min-width: 120px;
+   }
+   .dropdown-content a {
+      float: none;
+      color: #f2f2f2;
+      padding: 10px;
+      display: block;
+      text-align: left;
+   }
+   .dropdown-content a:hover {
+      background-color: #dd9ede;
+      color: black;
+   }
+   .dropdown:hover .dropdown-content {
+      display: block;
+   }
+</style>
+</head>
+<body>
+   <nav class="navbar">
+      <a href="#" class="active-link">Tutorialspoint</a>
+      <a href="#">Home</a>
+      <div class="dropdown">
+         <button class="dropbtn">Articles</button>
+         <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Bootstrap</a>
+         </div>
+      </div>
+      <a href="#">Courses</a>
+      <a href="#">eBook</a>
+   </nav>
+   <h1>Welcome to TutorialsPoint</h1>
+   <h3>Simple Easy Learning at your fingertips</h3>
+</body>
+</html>

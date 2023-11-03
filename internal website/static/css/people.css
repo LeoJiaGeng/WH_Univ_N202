@@ -1,0 +1,64 @@
+/* 重置默认样式 */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置页面背景和文字颜色 */
+body {
+    background-color: #f0f0f0;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* 设置页头样式 */
+header {
+    background-color: #4caf50;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 设置主要内容区样式 */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 设置部分标题样式 */
+h2 {
+    color: black;
+    font-size: 24px;
+}
+
+/* 设置段落样式 */
+p {
+    margin-bottom: 10px;
+}
+
+/* 设置学生列表样式 */
+ul {
+    list-style-type: none;
+}
+
+/* 设置学生列表项样式 */
+li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 设置页脚样式 */
+footer {
+    background-color:black;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+/* 鼠标悬停效果 */
+li:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}

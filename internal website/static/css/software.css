@@ -1,0 +1,66 @@
+/* 重置默认样式 */
+body, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置页面背景和文字颜色 */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex; /* 创建一个垂直排列的布局 */
+    flex-direction: column; /* 主轴方向为竖直排列 */
+}
+
+/* 设置页头样式 */
+h2 {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 设置子类容器样式 */
+.sub_class {
+    margin: 20px;
+}
+
+/* 设置单个软件信息样式 */
+.single_page {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 设置软件图片样式 */
+.single_page img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 设置软件描述样式 */
+.single_page p {
+    margin: 10px 0;
+}
+
+/* 设置下载链接样式 */
+.download_option a {
+    text-decoration: none;
+    color: #4caf50;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* 设置页脚样式 */
+footer {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.file-explorer {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.folder {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.folder-header {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+.folder-content {
+    padding: 10px;
+}
+
+.upload-box {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}

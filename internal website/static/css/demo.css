@@ -1,7 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+/*demo.css*/
+@import url("public.css");
 
 header {
     background-color: #231C1A;
@@ -36,7 +34,7 @@ header h1 {
     left: 5vw;
     top:0;
     line-height: 80px;
-    background-image: url(image4.png);
+    background-image: url(images/image4.png);
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -60,15 +58,15 @@ li {
     background-color: antiquewhite;
     color:white;
     height: 85vh;
-    background-image: url(quantum2.jpg);
+    background-image: url(images/quantum2.jpg);
     opacity: 0.75;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column; /* ÁĞ·ÅÅÅ²¼ */
-    align-items: center;  /* Ë®Æ½¶ÔÆë */ 
-    justify-content: center; /* ´¹Ö±¶ÔÆë */ 
+    flex-direction: column; /* åˆ—æ”¾æ’å¸ƒ */
+    align-items: center;  /* æ°´å¹³å¯¹é½ */ 
+    justify-content: center; /* å‚ç›´å¯¹é½ */ 
 }
 
 .welcome h2{
@@ -84,15 +82,15 @@ li {
 .welcome a {
     color:white;
     text-decoration: none;
-    border: 1px solid #ACACAC; /* ±ß¿ò */
-    padding: 10px 20px;  /* ÄÚ±ß¾à */
-    border-radius: 5px;  /* ±ß¿òÔ²»¡ */
+    border: 1px solid #ACACAC; /* è¾¹æ¡† */
+    padding: 10px 20px;  /* å†…è¾¹è· */
+    border-radius: 5px;  /* è¾¹æ¡†åœ†å¼§ */
 }
 
 footer {
     background-color: #231C1A;
     color: #b7b7b7;
-    height: 60px;  /* ÇøÓò¸ß¶È */
+    height: 60px;  /* åŒºåŸŸé«˜åº¦ */
     display: flex;
     justify-content: center;
     align-items: center;

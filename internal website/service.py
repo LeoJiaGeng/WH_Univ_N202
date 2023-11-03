@@ -6,8 +6,8 @@ app.secret_key='any random string'    #这里我们直接给定一个密钥
 user = {"cao":"123"}
 
 # 给前端模板传参，同时接收超链接传入参数
-@app.route("/index1/<a>", methods=["GET"])
-def index(a):
+@app.route("/news/<a>", methods=["GET"])
+def news(a):
     data = {
         'name':'张三',
         'age':18,
@@ -17,7 +17,7 @@ def index(a):
     # 以键值对的形式传参给模板index2.html
     # 左边是形参：data）；
     # 右边是我们给这个变量传的值（实参：字典data）；
-    return render_template('index2.html',data=data)
+    return render_template('news.html',data=data)
 
 # 主界面index 
 @app.route('/template', methods=["GET"])
@@ -51,8 +51,19 @@ def logout():
 
 @app.route('/software')
 def software():
-
     return render_template('software.html') 
+
+@app.route('/start')
+def start():
+    return render_template('start.html') 
+
+@app.route('/people')
+def people():
+    return render_template('people.html') 
+
+@app.route('/test')
+def test():
+    return render_template('test.html') 
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=2020)
