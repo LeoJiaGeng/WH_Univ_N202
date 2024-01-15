@@ -20,7 +20,7 @@ def news(a):
     return render_template('news.html',data=data)
 
 # 主界面index 
-@app.route('/template', methods=["GET"])
+@app.route('/index', methods=["GET"])
 def template():  # put application's code here
     # 渲染
     return render_template('index.html')
@@ -47,7 +47,7 @@ def login_process_page():
 def logout():
     # res.delete_cookie('username')
     session.pop('username')
-    return redirect(url_for('template'))
+    return redirect(url_for('template')) #是函数名称
 
 @app.route('/software')
 def software():
