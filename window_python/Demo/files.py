@@ -53,10 +53,16 @@ class SaveFile(object):
     def __init__(self):
         pass
 
+    def save_n(self, filename, dataList):
+        with open(filename, mode="+a", encoding="utf-8") as file_obj:
+            for data in dataList:
+                file_obj.write(str(data)+"\n")
+            file_obj.close()
+
     def save(self, filename, dataList):
         with open(filename, mode="+a", encoding="utf-8") as file_obj:
             for data in dataList:
-                file_obj.write(str(data) + "\n")
+                file_obj.write(str(data))
             file_obj.close()
 
 class OpenFile(object):
